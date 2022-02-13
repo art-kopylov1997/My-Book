@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&display=swap');
+
+body {
+    background-image: url("img/background-book-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courgette', cursive;
+}
+
+.book-root {
+    display: flex;
+}
+
+.book-menu-container {
+    background-image: url("img/book-menu-container.png");
+    width: 30vh;
+    height: 60vh;
+    border: 4px solid #312b2b;
+    border-radius: 15px;
+    font-family: "Candara Light", sans-serif;
+
+}
+
+.chapter-button-container {
+    margin-top: 25px;
+    text-align: center;
+    min-width: max-content;
+}
+
+.chapter-button {
+    font-weight: bold;
+    text-decoration: none;
+    color: gold;
+    background: linear-gradient(to top right, #534431, #e28551);
+    padding: 0 10px;
+    border-radius: 10px;
+    border: #2a2727 solid 3px;
+    font-size: 30px;
+    font-family: fangsong, serif;
+}
+
+.chapter-button:hover {
+    background: linear-gradient(to top right, #846848, #de773a);
+}
+
+.book-scroll-container {
+    background-image: url("img/scroll-book.png");
+    background-size: 100% 100%;
+    height: 150vh;
+    width: 80%;
+    position: relative;
+    bottom: 45px;
+}
+
+.book-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 60%;
+    height: 115vh;
+    overflow: auto;
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 10px;
+    color: #080845;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #7bb1a4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4b4646;
+    border-radius: 9em;
+}
+
+@media only screen and (max-device-width: 450px) {
+    .book-menu-container {
+        width: 12vh;
+        height: 25vh;
+    }
+
+    .chapter-button {
+        font-size: 40px;
+    }
+
+    .book-scroll-container {
+        background-size: 100% 60%;
+        background-repeat: no-repeat;
+        height: 150vh;
+        bottom: 35px;
+    }
+
+    .book-text {
+        font-size: 40px;
+        line-height: 1.2;
+        height: 70vh;
+        bottom: 60vh;
+    }
+}
+
+@media only screen and (max-device-height: 450px) {
+    .book-menu-container {
+        height: 70vh;
+    }
+
+    .chapter-button {
+        font-size: 25px;
+    }
+
+    .book-scroll-container {
+        bottom: 35px;
+    }
+
+    .book-text {
+        font-size: 22px;
+    }
+}
